@@ -1,0 +1,29 @@
+.feature-box{
+  padding: 3.75rem 1rem;
+  background-color: $color-white;
+  border-radius: $border-radius;
+  text-align: center;
+  @include transition;
+  &:hover{
+    cursor: default;
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 10%);
+  }
+  @include responsive(desktop){
+    padding: 3.12rem 2.2rem;
+  }
+  @include responsive(phone){
+    padding: 3.12rem 4.5rem;
+  }
+  .feature-image{
+    width: 80px;
+    height: 80px;
+  }
+  .feature-titel{
+    margin-top: 1.43rem;
+    margin-bottom: 0.75rem;
+  }
+  .feature-text{
+    font-size: 1rem;
+  }
+}

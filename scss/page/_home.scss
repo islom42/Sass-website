@@ -1,0 +1,73 @@
+.features{
+  transform: translateY(-30%);
+  @include responsive(desktop){
+    transform: translateY(-20%);
+  }
+  @include responsive(phone){
+    transform: translateY(-14%);
+  }
+}
+.explore{
+  margin-top: 3.12rem;
+  text-align: center;
+  @include responsive(phone){
+    margin-top: 1rem;
+  }
+  .explore-title{
+    width: 40%;
+    margin: 0 auto;
+    @include responsive(lg-desktop){
+      width: 70%;
+    }
+    @include responsive(tab){
+      width: 60%;
+    }
+    @include responsive(phone){
+      width: 75%;
+      font-size: 1.5rem;
+    }
+  }
+}
+.form-touch{
+  margin-top: 9.12rem;
+  @include responsive(phone){
+    margin-top: 6.25rem;
+  }
+  &__box{
+    background-color: $color-bg-2;
+    border-radius: $border-radius;
+    padding: 3.12rem;
+    @include responsive(tab){
+      padding: 6.25rem 3.12rem;
+    }
+    align-items: center;
+    background-image: url('../images/shape.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -400px 60%;
+    box-shadow: 5px 10px 30px rgba($color-secondary, 0.05);
+    @include responsive(desktop){
+     background-position: -300px 55%;
+    }
+  }
+  .row{
+    @include responsive(tab){
+      flex-wrap: wrap-reverse;
+      text-align: center;
+    }
+  }
+  .form{
+    width: 50%;
+    font-size: 1rem;
+    @include responsive(tab){
+      width: 100%;
+    }
+  }
+  &__image{
+    width: 30%;
+    @include responsive(tab){
+      width: 100%;
+      margin-bottom: 3.12rem;
+    }
+  }
+}
